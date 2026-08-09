@@ -565,25 +565,55 @@
 
             const projects = [
                 {
-                    title: '>> Banking Risk Analytics & Loan Approval Dashboard',
-                    desc: 'Developed an end-to-end data analytics solution to identify high-risk loan applicants and minimize financial losses for a banking entity.',
-                    tech: ['Python', 'PostgreSQL', 'PowerBi', 'Pandas'],
-                    metric: '40% ↑ Efficiency'
+                    title: '>> Starbucks Nutrition & Store Analytics Dashboard',
+                    desc: 'Built an interactive Power BI dashboard integrating Starbucks\' global beverage nutrition and store directory datasets to analyze product composition and regional store distribution, applying DAX measures and Power Query transformations for dynamic filtering and geographic drill-down.',
+                    tech: ['Power BI', 'DAX', 'Power Query'],
+                    metric: 'Global Store Insights',
+                    link: 'https://github.com/motalhakhan/starbucks-nutrition-store-analytics-powerbi'
                 },
                 {
-                    title: '>> Ola Ride-Hailing Analytics Dashboard',
-                    desc: 'Designed an end-to-end analytics solution for ride-hailing data that identified key cancellation trends, potentially increasing successful bookings by 15% through data-driven operational insights.',
-                    tech: ['Python','PowerBI', 'Pandas', 'Excel'],
-                    metric: '92% Accuracy'
+                    title: '>> Uber Ride Analytics Dashboard',
+                    desc: 'Built an interactive Power BI dashboard analyzing 104K+ Uber ride records, designing KPI dashboards to track revenue, completed bookings, lost bookings, distance, and average ride distance.',
+                    tech: ['Python', 'MySQL', 'Power BI'],
+                    metric: '$51.85M Revenue Tracked',
+                    link: 'https://github.com/motalhakhan/uber-ride-analytics'
                 },
                 {
-                    title: '>> Student Performance Analyzer',
-                    desc: 'Designed ML pipeline to identify at-risk students early. Automated report generation saving 15 hours/week for administrators while improving intervention timing.',
-                    tech: ['Python', 'XGBoost', 'Streamlit'],
-                    metric: '15hr Saved/week'
+                    title: '>> Banking Risk Analytics',
+                    desc: 'Designed a normalized MySQL database (3 linked tables, 1,000+ records) with systematic data validation and integrity checks, and built an interactive Power BI dashboard consolidating 5+ credit-risk KPIs into a single decision-support view.',
+                    tech: ['Python', 'MySQL', 'Power BI'],
+                    metric: '5+ KPIs Consolidated',
+                    link: 'https://github.com/motalhakhan/banking-risk-analytics-powerbi'
+                },
+                {
+                    title: '>> Ola Ride Analytics Dashboards',
+                    desc: 'Analyzed 10,000+ ride records using 10+ advanced SQL queries (JOINs, GROUP BY, Subqueries) to surface KPIs including cancellation rates, ratings, and revenue by payment method.',
+                    tech: ['SQL', 'Power BI', 'DAX'],
+                    metric: '10K+ Records Analyzed',
+                    link: 'https://github.com/motalhakhan/Ola-Ride-Analytics-Dashboard'
+                },
+                {
+                    title: '>> E-commerce Sales & Customer Segmentation Analytics Dashboard',
+                    desc: 'An end-to-end data analytics project that cleans raw e-commerce order data, builds an RFM (Recency, Frequency, Monetary) customer segmentation model in Python, and visualizes business performance through an interactive Power BI dashboard.',
+                    tech: ['SQL', 'Power BI', 'DAX'],
+                    metric: 'RFM Model',
+                    link: 'https://github.com/motalhakhan/ecom-sales'
+                },
+                {
+                    title: '>> MANDINE Restaurant Website',
+                    desc: 'Developed and functionally tested a multi-page restaurant website with WhatsApp ordering and a localStorage-based cart, validating cart persistence, order-flow accuracy, and scroll-triggered animations across devices and browsers.',
+                    tech: ['HTML', 'CSS', 'JavaScript'],
+                    metric: 'Cross-Browser Tested',
+                    link: 'https://github.com/motalhakhan/MANDINE-Restaurant-Website'
+                },
+                {
+                    title: '>> BAK Laurel\'s Consultant Website',
+                    desc: 'Designed and developed a single-page corporate website for a Lucknow-based placement consultancy, featuring a custom teal-and-gold brand identity, responsive animations, and an integrated contact form with resume upload functionality (powered by Web3Forms) to streamline candidate inquiries.',
+                    tech: ['HTML', 'CSS', 'JavaScript'],
+                    metric: 'Cross-Browser Tested',
+                    link: 'https://github.com/motalhakhan/bak.laurels'
                 }
             ];
-
             return (
                 <div className="relative">
                     {/* Side Navigation Dots */}
@@ -837,12 +867,21 @@
                                                 </span>
                                             ))}
                                         </div>
+                                        {project.link && (                             
+                                            <a 
+                                                href={project.link} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="inline-block mt-6 text-tan mono text-sm hover:border-tan transition-colors"
+                                            >
+                                                View on GitHub →
+                                            </a>
+                                        )}
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </section>
-
                     {/* Contact Section */}
                     <section id="contact" className="min-h-screen flex items-center justify-center px-8 py-20">
                         <div className="max-w-4xl mx-auto text-center">
@@ -876,7 +915,7 @@
                                 ))}
                             </div>
 
-                            <a href="https://drive.google.com/file/d/1J9WB-TTjCgUBTFYsmNBJpFSEqJZxLBQB/view?usp=drivesdk">
+                            <a href="https://drive.google.com/file/d/1EXYTzn6iz9tm7IEPQ-t9hlTAdat5TvTd/view?usp=drivesdk">
                             <button className="cyber-button mono text-sm tracking-wider reveal">
                                 <img src="icon/gif.gif" alt="download" className="inline-block w-5 h-5 mr-2" />
                                 DOWNLOAD_CV.pdf
